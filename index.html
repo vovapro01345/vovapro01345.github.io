@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Читалка: vovapro01345.github.io</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body, html {
+            height: 100%;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0d1117;
+        }
+        .header {
+            background: #161b22;
+            border-bottom: 1px solid #30363d;
+            padding: 12px 20px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+        .header a {
+            color: #58a6ff;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+        }
+        .header a:hover { text-decoration: underline; }
+        .header .note {
+            color: #8b949e;
+            font-size: 13px;
+            margin-left: auto;
+        }
+        iframe {
+            width: 100%;
+            height: calc(100vh - 49px); /* высота окна минус высота шапки */
+            border: none;
+            display: block;
+            background: #0d1117;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="https://vovapro01345.github.io/vovapro01345/" target="_blank" rel="noopener">
+            🔗 Открыть оригинал в новой вкладке
+        </a>
+        <span class="note">
+            Если сайт не отображается, он запрещает встраивание (X-Frame-Options).
+        </span>
+    </div>
+
+    <!-- Встраиваем целевой сайт -->
+    <iframe
+        src="https://vovapro01345.github.io/vovapro01345/"
+        title="Содержимое vovapro01345.github.io"
+        sandbox="allow-same-origin allow-scripts allow-forms allow-popups"
+        loading="lazy"
+        referrerpolicy="no-referrer"
+    >
+        Ваш браузер не поддерживает iframe.
+    </iframe>
+</body>
+</html>
